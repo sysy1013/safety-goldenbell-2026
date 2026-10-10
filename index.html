@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔔</text></svg>">
+<title>2026 어린이 안전골든벨 트레이닝</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+  body { font-family: 'Jua', sans-serif; overflow-x: hidden; }
+  * { word-break: keep-all; overflow-wrap: anywhere; }
+  @keyframes pulse-scale { 0%,100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+  .pulse-scale { animation: pulse-scale 1.6s ease-in-out infinite; }
+  @keyframes confetti-fall {
+    0% { transform: translate3d(0,-10vh,0) rotate(0deg); opacity: 1; }
+    100% { transform: translate3d(var(--dx),110vh,0) rotate(720deg); opacity: .9; }
+  }
+  .confetti { position: fixed; top: 0; width: 10px; height: 14px; z-index: 60; pointer-events: none;
+    animation: confetti-fall linear forwards; border-radius: 2px; }
+  @keyframes pop-in { 0% { transform: scale(.9); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
+  .pop-in { animation: pop-in .25s ease-out; }
+  .chip-on { background:#f59e0b; color:#fff; border-color:#d97706; }
+  .chip-off { background:#fff; color:#92400e; border-color:#fcd34d; }
+  button:disabled { cursor: not-allowed; }
+  .opt-sel { background:#fde68a !important; outline: 3px solid #f59e0b; }
+</style>
+</head>
+<body class="bg-amber-50 min-h-screen flex flex-col items-center justify-center p-4">
+  <div id="card" class="w-full max-w-xl bg-white rounded-2xl shadow-2xl p-6 md:p-8 border-4 border-amber-400 transition-all">
+    <div class="text-center mb-5">
+      <span class="inline-block bg-red-500 text-white px-6 py-2 rounded-full text-2xl shadow-md animate-bounce">🚨 2026 어린이 안전골든벨 🚨</span>
+    </div>
+    <div id="app"><p class="text-center text-gray-500">문제를 불러오는 중…</p></div>
+  </div>
+  <footer class="mt-4 text-xs text-amber-800 opacity-70 text-center">문제 출처: 2026 어린이 안전골든벨 문제은행 (1,732문항)</footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
