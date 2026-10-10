@@ -12,6 +12,16 @@
   var NUM_KO = ['일번', '이번', '삼번', '사번', '오번'];
   var TIMER = { mc: 25, ox: 10, sa: 15 };
   var SURVIVAL_N = 50;
+  var SIGN_IMG = {
+    867: 'images/speed-bump.svg', 875: 'images/speed-bump.svg', 900: 'images/speed-bump.svg',
+    868: 'images/children.svg', 872: 'images/bike-ped.svg', 873: 'images/bike-side.svg',
+    874: 'images/no-ped.svg', 889: 'images/crosswalk.svg', 899: 'images/motorway.svg',
+    901: 'images/roundabout.svg', 902: 'images/no-overtake.svg', 903: 'images/no-bike.svg'
+  };
+  function signImg(q, cls) {
+    var src = SIGN_IMG[q.id];
+    return src ? '<img src="' + src + '" alt="안전표지 그림" class="mx-auto ' + cls + ' mb-3 drop-shadow">' : '';
+  }
 
   var app = document.getElementById('app');
   var card = document.getElementById('card');
@@ -285,7 +295,8 @@
     var h = '<div class="flex flex-wrap gap-1 mb-2 text-xs">';
     h += '<span class="bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full">' + esc(q.set) + (q.part ? ' · ' + esc(q.part) : '') + '</span>';
     h += '<span class="bg-gray-100 text-gray-500 px-2 py-0.5 rounded-full">' + TYPE_NAME[q.type] + (q.blank ? ' (빈칸)' : '') + '</span>';
-    if (q.note && q.note.indexOf('그림') >= 0) h += '<span class="bg-amber-200 text-amber-900 px-2 py-0.5 rounded-full">🖼️ 원본은 그림(안전표지) 문제</span>';
+    if (SIGN_IMG[q.id]) h += '<span class="bg-amber-200 text-amber-900 px-2 py-0.5 rounded-full">🚦 안전표지 문제</span>';
+    else if (q.note && q.note.indexOf('그림') >= 0) h += '<span class="bg-amber-200 text-amber-900 px-2 py-0.5 rounded-full">🖼️ 원본은 그림(안전표지) 문제</span>';
     if (q.note && q.note.indexOf('난이도') >= 0) h += '<span class="bg-purple-100 text-purple-700 px-2 py-0.5 rounded-full">📶 ' + esc(q.note) + '</span>';
     if (wrongNote[q.id]) h += '<span class="bg-rose-100 text-rose-700 px-2 py-0.5 rounded-full">📕 오답 ' + wrongNote[q.id].w + '회</span>';
     return h + '</div>';
@@ -436,7 +447,7 @@
     h += tagsHtml(q);
     h += '<div class="bg-amber-50 border-2 border-amber-300 p-5 pt-8 rounded-2xl min-h-[100px] text-xl text-gray-800 relative mb-4 pop-in">' +
       '<button id="replay" class="absolute top-2 right-2 text-xs bg-white border border-amber-300 text-amber-800 px-2 py-1 rounded-lg shadow-sm hover:bg-amber-100">🔊 다시듣기</button>' +
-      '<div class="leading-relaxed">' + esc(q.q) + '</div></div>';
+      signImg(q, 'h-36 md:h-44') + '<div class="leading-relaxed">' + esc(q.q) + '</div></div>';
 
     // answer area
     var revealed = isAuto ? S.revealed : S.answered;
@@ -755,7 +766,7 @@
     $('#lInfo').textContent = '검색 결과: ' + res.length + '문항';
     var h = '';
     slice.forEach(function (q) {
-      h += '<div class="border-2 border-amber-200 rounded-2xl p-4 bg-white">' + tagsHtml(q) +
+      h += '<div class="border-2 border-amber-200 rounded-2xl p-4 bg-white">' + tagsHtml(q) + signImg(q, 'h-24') +
         '<div class="text-lg text-gray-800 mb-2"><span class="text-amber-600">#' + q.id + '</span> ' + esc(q.q) + '</div>';
       if (q.type === 'mc') {
         h += '<ol class="grid gap-1 mb-2">';

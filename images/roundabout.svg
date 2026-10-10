@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="회전교차로">
+<title>회전교차로</title>
+<circle cx="100" cy="100" r="94" fill="#0057B8"/>
+<circle cx="100" cy="100" r="89" fill="none" stroke="#FFFFFF" stroke-width="2.5"/>
+<path d="M146.36 87.58 A48 48 0 0 0 91.66 52.73" fill="none" stroke="#FFFFFF" stroke-width="14"/><polygon points="71.97,56.20 90.86,36.63 96.41,68.14" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"/><path d="M87.58 146.36 A48 48 0 0 0 145.11 116.42" fill="none" stroke="#FFFFFF" stroke-width="14"/><polygon points="151.95,97.62 159.46,123.77 129.39,112.82" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"/><path d="M66.06 66.06 A48 48 0 0 0 63.23 130.85" fill="none" stroke="#FFFFFF" stroke-width="14"/><polygon points="76.09,146.17 49.69,139.61 74.20,119.04" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"/>
+</svg>

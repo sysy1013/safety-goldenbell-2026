@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="자동차 전용도로">
+<title>자동차 전용도로</title>
+<circle cx="100" cy="100" r="94" fill="#0057B8"/>
+<circle cx="100" cy="100" r="89" fill="none" stroke="#FFFFFF" stroke-width="2.5"/>
+<g transform="translate(0 -8)"><path d="M30 130 L30 112 Q31 104 42 102 L66 98 L82 78 Q86 73 94 73 L128 73 Q136 73 142 80 L158 98 L166 100 Q172 102 172 110 L172 130 Z" fill="#FFFFFF"/><path d="M90 81 L76 98 L110 98 L110 81 Z M117 81 L117 98 L150 98 L137 83 Q135 81 131 81 Z" fill="#0057B8"/><circle cx="62" cy="132" r="18" fill="#0057B8"/><circle cx="142" cy="132" r="18" fill="#0057B8"/><circle cx="62" cy="132" r="13" fill="#FFFFFF"/><circle cx="142" cy="132" r="13" fill="#FFFFFF"/><circle cx="62" cy="132" r="4.5" fill="#0057B8"/><circle cx="142" cy="132" r="4.5" fill="#0057B8"/></g>
+</svg>

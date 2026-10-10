@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="횡단보도">
+<title>횡단보도</title>
+<rect x="6" y="6" width="188" height="188" rx="20" fill="#0057B8"/>
+<rect x="13" y="13" width="174" height="174" rx="14" fill="none" stroke="#FFFFFF" stroke-width="2.5"/>
+<polygon points="34,150 47,150 43,172 30,172" fill="#FFFFFF"/><polygon points="56,150 69,150 65,172 52,172" fill="#FFFFFF"/><polygon points="78,150 91,150 87,172 74,172" fill="#FFFFFF"/><polygon points="100,150 113,150 109,172 96,172" fill="#FFFFFF"/><polygon points="122,150 135,150 131,172 118,172" fill="#FFFFFF"/><polygon points="144,150 157,150 153,172 140,172" fill="#FFFFFF"/><polygon points="166,150 179,150 175,172 162,172" fill="#FFFFFF"/><g transform="translate(100 140) scale(0.92)" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"><circle cx="2" cy="-86" r="11" fill="#FFFFFF" stroke="none"/><path d="M0 -69 L-3 -40" stroke-width="15"/><path d="M-3 -40 L10 -21 L17 -2"/><path d="M-3 -40 L-11 -19 L-24 -6"/><path d="M1 -66 L13 -52 L23 -42"/><path d="M-1 -66 L-12 -52 L-17 -38"/></g>
+</svg>

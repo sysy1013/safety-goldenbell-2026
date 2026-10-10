@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="과속방지턱">
+<title>과속방지턱</title>
+<polygon points="100,20 185,168 15,168" fill="#FFD400" stroke="#E60012" stroke-width="14" stroke-linejoin="round"/>
+<path d="M44 152 L72 152 C80 152 84 124 100 124 C116 124 120 152 128 152 L156 152 L156 162 L44 162 Z" fill="#111111"/>
+</svg>
